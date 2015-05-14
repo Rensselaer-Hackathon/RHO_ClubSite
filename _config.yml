@@ -1,9 +1,7 @@
-name: "HackRPI Club"
-description: "OUR Club Website"
+name: "Rensselaer Hackathon Organization"
+description: "The Official Website for the Rensselaer Hackathon Organization at RPI"
 
 url: “http://localhost:4000”
 
-paginate: 10
-
-markdown: rdiscount
 permalink: pretty
+encoding: utf-8

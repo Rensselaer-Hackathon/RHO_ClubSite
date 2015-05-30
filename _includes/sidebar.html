@@ -24,10 +24,12 @@
 <a target="_blank" href="http://hackrpi.com">HackRPI<br></a>
 <a target="_blank" href="https://mlh.io">Major League Hacking<br></a>
 
-<h4>Recent Posts<h4>
+<h4>Recent Posts</h4>
 
 <ul>
 	{% for post in site.posts limit: 7 %}
 		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
+
+<a href="/archive">See All Posts</a>

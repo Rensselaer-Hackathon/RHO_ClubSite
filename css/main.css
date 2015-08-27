@@ -14,3 +14,71 @@ body {
 .clearfix {
 	clear: both;
 }
+
+.showcase {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.showcase-item {
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+	overflow: hidden;
+	color: #FFFFFF;
+	border: 2px solid #454242;
+	border-radius: 20px;
+	background-color: #505050;
+}
+
+.showcase-item img {
+	width: 200px;
+	height: 200px;
+}
+
+.showcase-item .date {
+	margin: 10px;
+	color: #acacac;
+}
+
+.showcase-item .title {
+	text-align: center;
+	vertical-align: bottom;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 20%;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.showcase-item .authors {
+	text-align: center;
+	font-style: italic;
+	color: #fc4739;
+}
+
+.showcase-item .hackathon {
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.showcase-item .awards {
+	margin-left: 10%;
+}
+
+.showcase-item .alt {
+	display: none;
+	padding: 10px;
+}
+
+.showcase-item a {
+	color: #fc4739;
+}
+.showcase-item a:hover {
+	color: #fc4739;
+}
+
+.project-img {
+	margin: 10px auto;
+}

@@ -1,0 +1,56 @@
+---
+title: Showcase
+layout: default
+---
+
+<h1>Project Showcase</h1>
+
+<p>
+  This is a showcase of the projects completed by club members at
+  hackathons. <a href="add_project">Add your project.</a>
+</p>
+
+<div class="showcase">
+  {% for post in site.categories.project %}
+
+    <div class="showcase-item">
+
+      <div class="primary row">
+        <div class="span6">
+          <img src="{{ post.img_url }}" />
+        </div>
+        <div class="span6">
+          <div class="date">
+            {{ post.date | date: "%D" }}
+          </div>
+          <div class="title">
+            {{ post.title }}
+          </div>
+          <div class="authors">
+            {{ post.authors }}
+          </div>
+          <div class="hackathon">
+            {{ post.hackathon }}
+          </div>
+          <div class="awards">
+            {{% if post.awards }}
+              <i class="fa fa-trophy"></i>{{ post.awards }}
+            {{/if}}
+          </div>
+        </div>
+      </div>
+
+      <div class="alt">
+        <p class="description">
+          {{ post.description | truncate: 350 }}
+        </p>
+        <a href="{{ post.repo_url }}" target="_blank">Repository</a><br><br>
+        <a href="{{ post.url }}">Full Post</a>
+      </div>
+
+    </div>
+
+  {% endfor %}
+</div>
+
+<script src="/js/showcase.js" charset="utf-8"></script>

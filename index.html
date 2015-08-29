@@ -10,9 +10,9 @@ layout: default
 </p>
 
 
-<h3>Announcements</h3>
+<h3>News</h3>
 
-{% for post in site.posts limit: 3 %}
+{% for post in site.categories.news limit: 3 %}
     <h4 class="pull-left">{{ post.title }}</h4>
     <p class="muted pull-right">{{ post.date | date_to_long_string }}</p>
     <div class="clearfix">

@@ -1,0 +1,30 @@
+{% include header.html %}
+
+<div class="row-fluid">
+
+  <div class="span9">
+		{{ page.date | date: "%D" }}
+		<h1>{{ page.title }}</h1>
+		<b>Contributors:</b> {{ page.authors }}<br>
+		<b>Hackathon:</b> {{ page.hackathon }}<br>
+    <a href="{{ page.repo_url }}" target="_blank">Repository</a><br>
+		{{% if page.awards }}
+			<i class="fa fa-trophy"></i>{{ page.awards }}<br>
+		{{/if}}
+    <img class="project-img" src="{{ page.img_url }}" alt="" />
+
+		<p class="description">
+			<b>Description: </b>{{ page.description }}
+		</p>
+
+    <p>
+      {{ page.content }}
+    </p>
+
+	</div>
+
+  <div class="span3">{% include sidebar.html %}</div>
+
+</div>
+
+{% include footer.html %}
